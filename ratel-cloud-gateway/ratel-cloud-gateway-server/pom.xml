@@ -14,6 +14,12 @@
     <description>网关服务启动模块</description>
 
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org.ratel</groupId>-->
+<!--            <artifactId>ratel-cloud-common-core</artifactId>-->
+<!--            <version>${ratel-cloud-project.version}</version>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -30,6 +36,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!--Feign-->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
         <!-- swagger -->

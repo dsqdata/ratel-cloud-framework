@@ -13,10 +13,13 @@
     <modules>
         <module>ratel-cloud-dependencies</module>
         <module>ratel-cloud-gateway</module>
+        <module>ratel-cloud-common</module>
+        <module>ratel-cloud-starters</module>
     </modules>
 
     <properties>
         <ratel-cloud-dependencies.version>1.0-SNAPSHOT</ratel-cloud-dependencies.version>
+        <ratel-cloud-project.version>1.0-SNAPSHOT</ratel-cloud-project.version>
 
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -48,6 +51,18 @@
                 <version>${ratel-cloud-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.ratel</groupId>
+                <artifactId>ratel-cloud-core</artifactId>
+                <version>${ratel-cloud-project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.ratel</groupId>
+                <artifactId>ratel-cloud-annotation</artifactId>
+                <version>${ratel-cloud-project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    org.ratel.cloud.log.LogAutoConfiguration
+org.springframework.context.ApplicationContextInitializer=\
+    org.ratel.cloud.log.LampMdcAdapterInitializer
